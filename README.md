@@ -1,6 +1,6 @@
 ### Projet de Gestion des Plaintes
 
 ...
-    Cours PHP
+    Cours PHP ORM
     @ISI - DAKAR - 2019
 ...

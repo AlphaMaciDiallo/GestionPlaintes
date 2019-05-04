@@ -17,11 +17,12 @@ class User
     private $email;
     /** @Column(type="string") **/
     private $password;
+
     /**
-     * One user has many lieux. This is the inverse side.
-     * @OneToMany(targetEntity="Lieu", mappedBy="user")
+     * One user has many infractions. This is the inverse side.
+     * @OneToMany(targetEntity="Infraction", mappedBy="user")
      */
-    private $lieux;
+    private $infractions;
     /**
      * Many Users have Many Roles.
      * @ManyToMany(targetEntity="Roles", inversedBy="users")
@@ -78,13 +79,13 @@ class User
     {
         $this->password = $password;
     }
-    public function getLieux()
+    public function getInfraction()
     {
-        return $this->lieux;
+        return $this->infractions;
     }
-    public function setLieux($lieux)
+    public function setInfractions($infractions)
     {
-        $this->lieux = $lieux;
+        $this->lieux = $infractions;
     }
     public function getRoles()
     {
